@@ -1,0 +1,21 @@
+Since I run two serial shell scripts, I have measured the computation time for each script and combined the time.
+
+For run_Rp2.sh,
+
+each of jobs for generating frequency tables took different computation. Thus, I took the worst case that tooks longest computation time, which is 4m47s
+
+For run_Rp3,sh, which combines freqeuncy tables and measure statistics, it took 1.260s (Real time)
+
+Thus, total computation time is 4m48s.
+
+As expected, since significant time was spent for reading files and splitting lines, we are able to reduce remarkably the computational time overall by parallelizing the file processing. 
+
+필요한 패키지를 로딩중입니다: plyr
+Mean:  6.566504 
+Std:  31.55633 
+Med:  0 
+
+real    0m1.260s
+user    0m0.903s
+sys     0m0.167s
+
