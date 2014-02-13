@@ -1,3 +1,5 @@
+[Part 1]
+
 Method:
 
 The method that I am using for the part 1 of this assignment is that parallelizing the file processing into cluster by using shell command and cluster system called SGE (Sun Grid Engine).
@@ -10,4 +12,15 @@ Running codes:
 
 (2) Once all the jobs have been finished, then type qsub ./run_Rp3.sh. This will measure all the statistics that we measured in HW1. To be specific, it will first run run_Rp3.py to gather all the separte frequency tables into one table file. And then ./run_Rp3.R will measure the statistics with the combined file.
 
+[Part 2]
 
+Method:
+
+The method that I employ here is using R parallel package called "snow". It uses multiple cores in parallel for processing R functions.
+
+Running codes:
+
+(1) make sure that all csv files are in csv directory under home directory. 
+
+(2) run R --slave < run_Rparallel.R
+ 
